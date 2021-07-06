@@ -1,0 +1,28 @@
+#Parameters 
+parameters: 
+    data: 'census'
+    tasks: ['income','marital','education']
+    model: 'MMoEEx' #MMoE or MMoEEx (MAML)
+    testing: '-' #description 
+    batch_size: 512
+    max_epochs: 10
+    num_experts: 12
+    num_units: 4
+    alpha: 0.00001 #decay downgrad
+    gamma: 0.9 #Adam decay 
+    maml_split_prop: 0.8
+    n_epochs_stop: 4
+    rep_ci: 1
+    use_early_stop: False
+    save_tensor: False
+    shuffle: True
+    create_outputfile: True
+    best_validation_test: True
+    prob_exclusivity: 0.75
+    type_exc: exclusivity
+    output: config_census
+    runits: [4]
+    seqlen: None
+    prop: None #proportion of training set used
+    task_balance_method: 'DWA' # options are 'None', 'DWA', 'LBTW' 
+    lambda: [1,1,1]

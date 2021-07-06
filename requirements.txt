@@ -1,0 +1,12 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+PyYAML
+numpy
+pandas
+scikit-learn==0.23.2
+tensorboard
+tensorflow-gpu
+torch==1.6.0+cu92
+torchmeta==1.6.0
+torchvision==0.7.0+cu92
+tqdm
+wget

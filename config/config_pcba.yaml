@@ -1,0 +1,27 @@
+parameters:
+  SEED: 2021
+  alpha: 1.0e-05
+  batch_size: 2000
+  best_validation_test: true
+  create_outputfile: true
+  cw_pcba: 100.0
+  data: pcba
+  expert: Expert_2layers
+  gamma: 1.0
+  id: config_pcba_mmoe_6_seed2021
+  lambda: ''
+  maml_split_prop: 0.8
+  max_epochs: 100
+  model: Md
+  num_experts: 4
+  num_units: 5
+  output: config_pcba_mmoe_6_seed2021
+  prob_exclusivity: 0.55
+  prop: 1.0
+  runits:
+  - 2000
+  save_tensor: false
+  task_balance_method: None
+  tasks:
+  - ''
+  type_exc: exclusivity

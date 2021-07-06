@@ -1,0 +1,35 @@
+#Parameters
+parameters:
+    data: 'mimic'
+    tasks: ['pheno','los','decomp','ihm']
+    model: 'MMoEEx'
+    testing: 'mimic' #description
+    batch_size: 256
+    max_epochs: 50
+    num_experts: 12
+    num_units: 16
+    expert: 'Expert_LSTM'
+    expert_blocks: 3
+    alpha: 0.00001 #decay downgrad
+    gamma: 0.9 #Adam decay
+    maml_split_prop: 0.8
+    n_epochs_stop: 3
+    rep_ci: 1
+    use_early_stop: False
+    save_tensor: False
+    shuffle: True
+    runits: [64]
+    seqlen: 170
+    create_outputfile: True
+    best_validation_test: True
+    prob_exclusivity: 0.5
+    type_exc: 'exclusivity'
+    output: config_mimic
+    prop: 1.0 #proportion of training set used
+    lambda: [1,1,1,1] #tasks weights
+    cw_pheno: 5.0 #class weights
+    cw_decomp: 25.0
+    cw_ihm: 5.0
+    cw_los: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    lstm_nlayers: 2
+    task_balance_method: 'LBTW' #options: 'None', 'DWA', 'LBTW'
